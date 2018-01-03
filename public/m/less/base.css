@@ -1,0 +1,58 @@
+/*base.less是用来写一些公共的样式的*/
+/*定义主题颜色*/
+img {
+  /*解决图片3px的间隙 居中对齐*/
+  vertical-align: middle;
+}
+/*头部区域的公共样式*/
+#header {
+  z-index: 9;
+  position: fixed;
+  background-color: #006699;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+#header > h4 {
+  font-weight: normal;
+  line-height: 45px;
+  margin: 0;
+}
+#header > a {
+  position: absolute;
+  color: #fff;
+  top: 12px;
+  right: 20px;
+}
+/*底部区域的公共样式*/
+#footer {
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #006699;
+  text-align: center;
+}
+#footer > .mui-row a {
+  display: block;
+  color: #fff;
+  margin: 8px 0;
+}
+#footer > .mui-row a::before {
+  display: block;
+}
+#footer > .mui-row a.active {
+  color: orange;
+}
+html,
+body {
+  height: 100%;
+}
+/*主体内容的公共样式*/
+#main {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  height: 100%;
+  background-color: #fff;
+}

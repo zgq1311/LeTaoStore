@@ -1,0 +1,140 @@
+/*在主页里面 导入base.less公共样式*/
+/*base.less是用来写一些公共的样式的*/
+/*定义主题颜色*/
+img {
+  /*解决图片3px的间隙 居中对齐*/
+  vertical-align: middle;
+}
+/*头部区域的公共样式*/
+#header {
+  z-index: 9;
+  position: fixed;
+  background-color: #006699;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+#header > h4 {
+  font-weight: normal;
+  line-height: 45px;
+  margin: 0;
+}
+#header > a {
+  position: absolute;
+  color: #fff;
+  top: 12px;
+  right: 20px;
+}
+/*底部区域的公共样式*/
+#footer {
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #006699;
+  text-align: center;
+}
+#footer > .mui-row a {
+  display: block;
+  color: #fff;
+  margin: 8px 0;
+}
+#footer > .mui-row a::before {
+  display: block;
+}
+#footer > .mui-row a.active {
+  color: orange;
+}
+html,
+body {
+  height: 100%;
+}
+/*主体内容的公共样式*/
+#main {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  height: 100%;
+  background-color: #fff;
+}
+/*主体区域*/
+#nav {
+  padding: 10px;
+}
+#nav > .mui-row {
+  width: 100%;
+  height: 100%;
+}
+#nav > .mui-row > .mui-col-xs-4 > a {
+  display: block;
+}
+#nav > .mui-row > .mui-col-xs-4 > a > img {
+  width: 100%;
+  height: 100%;
+}
+/*广告区域*/
+#adv {
+  border-top: 1px solid #000;
+}
+#adv > .mui-row {
+  margin: 0 10px;
+}
+#adv > .mui-row > .mui-col-xs-8 > .mui-row > .mui-col-xs-6 > img {
+  width: 100%;
+  height: 100%;
+}
+#adv > .mui-row > .mui-col-xs-4 > img {
+  width: 100%;
+  height: 100%;
+}
+/*品牌区域*/
+#brand {
+  width: 100%;
+  padding: 0 10px;
+}
+#brand > img {
+  width: 100%;
+}
+#brand > .mui-row {
+  width: 100%;
+}
+#brand > .mui-row > div img {
+  width: 100%;
+}
+#sport {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #ccc;
+}
+#sport > img {
+  width: 100%;
+  padding: 0 10px;
+}
+#sport > .mui-row {
+  margin: 0 10px;
+}
+#sport > .mui-row > .mui-col-xs-6 {
+  background-color: #fff;
+}
+#sport > .mui-row > .mui-col-xs-6 > img {
+  width: 100%;
+}
+#sport > .mui-row > .mui-col-xs-6 > .product-name {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+#sport > .mui-row > .mui-col-xs-6 > .product-price {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+#sport > .mui-row > .mui-col-xs-6 > .product-price > span {
+  color: #f40;
+}
+#sport > .mui-row > .mui-col-xs-6 > .product-price > del {
+  color: #ccc;
+}
+#sport > .mui-row > .mui-col-xs-6 > button {
+  display: block;
+  margin: 0 auto;
+}
